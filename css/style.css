@@ -349,7 +349,7 @@ button { border: 0; background-color: #ffffff; cursor: pointer; }
 
 .main-bottom {
   width: 100%;
-  height: 284px;
+  height: auto;
   margin-top: 40px;
 }
 
@@ -358,23 +358,23 @@ button { border: 0; background-color: #ffffff; cursor: pointer; }
   position: relative;
 }
 
-.main-bottom article .title {
+article .title {
   width: 100%;
-  height: 8%;
+  height: 26px;
   font-size: 20px;
   color: #444444;
   letter-spacing: -2px;
   box-sizing: border-box;
-  margin: 12px 0;
+  margin-bottom: 15px;
 }
 
-.main-bottom article .contents {
+article .contents {
   width: 100%;
-  height: 85%;
+  height: 242px;
   border: 1px solid #cccccc;
 }
 
-.main-bottom article .more {
+article .more {
   position: absolute;
   top: 12px;
   right: 0;
@@ -383,7 +383,7 @@ button { border: 0; background-color: #ffffff; cursor: pointer; }
 }
 
 .main-bottom .sns-container .contents {
-  background: url(../img/bg_sns.jpg) no-repeat center;
+  background: url(../img/bg_sns.jpg) no-repeat center / 100% 100%;
 }
 
 .main-bottom .sns-container ul {
@@ -496,7 +496,7 @@ button { border: 0; background-color: #ffffff; cursor: pointer; }
   background-color: #349039;
 }
 
-.main-bottom .issue .issue-img{
+.issue .issue-img{
   width: 100%;
   height: 80%;
 }
@@ -509,17 +509,19 @@ button { border: 0; background-color: #ffffff; cursor: pointer; }
   background: url(../img/20220927044118450.png) no-repeat center / cover;
 }
 
-.main-bottom .issue .issue-txt{
+.issue .issue-txt{
   width: 100%;
   height: 20%;
-  padding: 15px 0 0 8px;
+  padding: 15px 0;
+  text-align: center;
+  color: #444444;
 }
 
 .icon-wrap {
   width: 100%;
   background-color: #eaebed;
-  margin: 40px 0;
-  padding: 20px 0;
+  margin: 60px 0;
+  padding: 30px 0;
   box-sizing: content-box;
 }
 
@@ -565,6 +567,153 @@ button { border: 0; background-color: #ffffff; cursor: pointer; }
 }
 
 .icon-wrap ul li p {
+  color: #000000;
+  letter-spacing: -1px;
+}
+
+.notice .inner {
+  flex-direction: column;
+  border-bottom: 1px solid #000000;
+}
+
+.notice-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.notice-info ul {
+  width: 18%;
+}
+
+.notice-info ul li a {
+  display: inline-block;
+  width: 83%;
+  height: 52px;
+  line-height: 52px;
+  background-color: #e3eef4;
+  padding-left: 20px;
+  margin-bottom: 5px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   color: #444444;
-  font-size: 14px;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: -1px;
+}
+
+.notice-info ul li.notice-on a {
+  width: 90%;
+  background-color: #1769ab;
+  color: #ffffff;
+}
+
+.notice-contents {
+  width: 79%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.notice-contents article {
+  width: 21%;
+  border-bottom: 1px solid #333333;
+}
+
+.notice-con-head {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.notice-con-head .date {
+  display: inline-block;
+  width: 65px;
+  height: 65px;
+  line-height: 65px;
+  border-radius: 50%;
+  background-color: #eaebed;
+  text-align: center;
+  font-weight: 600;
+  color: #444444;
+}
+
+.notice-con-body {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.notice-con-body h4 {
+  font-size: 22px;
+  color: #444444;
+  letter-spacing: -1.5px;
+  line-height: 28px;
+}
+
+.notice-con-body p {
+  line-height: 22px;
+  letter-spacing: -1px;
+}
+
+.notice-media {
+  width: 100%;
+  height: 284px;
+  margin: 55px 0 30px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.notice-media article {
+  width: 23.5%;
+  position: relative;
+}
+
+.notice-media .title {
+  margin-bottom: 20px;
+}
+
+.notice-media .youtube.first-box .issue-img {
+  background: url(../img/20220926023047537.jpg) no-repeat center / cover;
+}
+
+.notice-media .youtube.second-box .issue-img {
+  background: url(../img/20220916011258944.jpg) no-repeat center / cover;
+}
+
+.notice-media .alert.first-box .issue-img {
+  background: url(../img/20220922095104173.jpg) no-repeat center / cover;
+}
+
+.notice-media .alert.second-box .issue-img {
+  background: url(../img/20220928043315155.jpg) no-repeat center / 100% 100%;
+}
+
+.notice-media .alert .issue-img {
+  height: 100%;
+}
+
+.service-wrap {
+  width: 100%;
+  margin-top: 60px;
+}
+
+.service-wrap .inner {
+  justify-content: space-between;
+}
+
+.service-wrap .service {
+  width: 48.5%;
+  height: 347px;
+}
+
+.service.left {
+  background-color: #eff7fa;
+}
+
+.service.right {
+  border: 1px solid #cccccc;
 }
