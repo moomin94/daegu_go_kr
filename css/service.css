@@ -1,0 +1,211 @@
+@charset "UTF-8";
+
+.service-wrap {
+  width: 100%;
+  margin-top: 60px;
+}
+
+.service-wrap .inner {
+  justify-content: space-between;
+}
+
+.service-wrap .service {
+  width: 49%;
+  height: 347px;
+}
+
+.service.left {
+  position: relative;
+  background-color: #eff7fb;
+  padding: 30px 80px 0;
+}
+
+.service.left h4 {
+  font-size: 20px;
+  color: #444444;
+  letter-spacing: -1.5px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.service.left .btn-wrap {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+
+.service.left .page-btn {
+  position: absolute;
+  top: 170px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 52px;
+  border-radius: 50%;
+  background-color: #e0e7ed;
+  text-align: center;
+  cursor: pointer;
+}
+
+.service.left .page-btn i {
+  font-size: 20px;
+  color: #333333;
+}
+
+.service.left .page-btn.left {
+  left: 20px;
+}
+
+.service.left .page-btn.right {
+  right: 20px;
+}
+
+.service-menu {
+  position: relative;
+  width: 524px;
+  height: 266px;
+  overflow: hidden;
+}
+
+.service-menu ul {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: justify;
+}
+
+.service-menu ul li {
+  width: 131px;
+  height: 131px;
+  float: left;
+}
+
+.service-menu ul li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-menu ul li a i{
+  width: 82px;
+  height: 82px;
+  line-height: 82px;
+  text-align: center;
+  font-size: 30px;
+  color: #84c8ff;
+  background-color: #ffffff;
+  border-radius: 35px;
+}
+
+.service-menu ul li a span {
+  font-size: 15px;
+  letter-spacing: -1px;
+  margin-top: 8px;
+  text-align: center;
+  color: #444444;
+}
+
+.service-menu ul:nth-child(1){
+  left: 0;
+}
+
+.service-menu ul:nth-child(2){
+  left: 100%;
+}
+
+.service-menu ul:nth-child(3){
+  left: 200%;
+}
+
+.service.right {
+  border: 1px solid #cccccc;
+  padding: 35px;
+}
+
+/* tab button style */
+.service-tab input[type=radio],
+.service-tab input[type=radio] ~ div {
+  display: none;
+}
+
+.service-tab .buttons {
+  width: 612px;
+  height: 54px;
+  border: 1px solid #cccccc;
+  border-bottom: 1px solid #17b463;
+}
+
+.service-tab .buttons label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 100%;
+  border-right: 1px solid #cccccc;
+  float: left;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  color: #333333;
+  cursor: pointer;
+}
+
+.service-tab .buttons label i {
+  margin-right: 5px;
+  font-size: 20px;
+  color: #333333;
+}
+
+.service-tab .buttons label:last-child {
+  border-right: none;
+}
+
+/* tab 클릭시 내용 변경 */
+input:nth-child(1):checked ~ div:nth-of-type(1),
+input:nth-child(2):checked ~ div:nth-of-type(2),
+input:nth-child(3):checked ~ div:nth-of-type(3),
+input:nth-child(4):checked ~ div:nth-of-type(4) {
+  display: block;
+}
+
+input:nth-child(1):checked ~ section.buttons > label:nth-child(1),
+input:nth-child(2):checked ~ section.buttons > label:nth-child(2),
+input:nth-child(3):checked ~ section.buttons > label:nth-child(3),
+input:nth-child(4):checked ~ section.buttons > label:nth-child(4) {
+  background-color: #17b464;
+  color: #ffffff;
+}
+
+input:nth-child(1):checked ~ section.buttons > label:nth-child(1) i,
+input:nth-child(2):checked ~ section.buttons > label:nth-child(2) i,
+input:nth-child(3):checked ~ section.buttons > label:nth-child(3) i,
+input:nth-child(4):checked ~ section.buttons > label:nth-child(4) i {
+  color: #ffffff;
+}
+
+/* tab 버튼 아래 내용 style */
+.tab-itmes {
+  width: 100%;
+}
+
+.tab-items ul {
+  float: left;
+  width: 30%;
+  margin-top: 16px;
+  margin-right: 5%;
+}
+
+.tab-items ul:last-child {
+  margin-right: 0;
+}
+
+.tab-items ul li {
+  border-bottom: 1px dashed #cccccc;
+  padding: 16px 0;
+}
+
+.tab-items ul li a {
+  font-size: 15px;
+  color: #444444;
+  letter-spacing: -1px;
+}

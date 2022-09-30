@@ -1,0 +1,78 @@
+@charset "UTF-8";
+:root {
+  --main-color: #17b463;
+   /* rgb(23, 180, 99) */
+}
+html,body{ height: 100%; }
+body{ font-family: '맑은 고딕', '돋움', Dotum, '굴림', Gulim, Sans-serif; }
+*, :after, :before { box-sizing:border-box; }
+*{ margin: 0; padding: 0; color: #666666;}
+/* canvas, img, picture, svg, video { display: block; max-width: 100%; } */
+button, input, select, textarea { font:inherit; }
+/* h1, h2, h3, h4, h5, h6, p { overflow-wrap: break-word; } */
+ul,ol,li { list-style: none;}
+a { color: #666666; text-decoration: none; }
+button { border: 0; cursor: pointer; }
+
+/* 공통 부분 */
+.inner {
+  width: 1400px;
+  max-width: 1400px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+article .title {
+  width: 100%;
+  height: 26px;
+  font-size: 20px;
+  color: #444444;
+  letter-spacing: -2px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+article .contents {
+  width: 100%;
+  height: 242px;
+  border: 1px solid #cccccc;
+}
+
+article .more {
+  position: absolute;
+  top: 12px;
+  right: 0;
+  font-size: 14px;
+  color: #444444;
+}
+
+.issue .issue-img{
+  width: 100%;
+  height: 80%;
+}
+
+.issue .issue-txt{
+  width: 100%;
+  height: 20%;
+  padding: 15px 0;
+  text-align: center;
+  color: #444444;
+}
+
+.btn {
+  display: inline-block;
+  width: 31px;
+  height: 31px;
+  line-height: 31px;
+  text-align: center;
+  border: 1px solid #bbbbbb;
+  cursor: pointer;
+}
+
+.btn i {
+  color: #000000;
+  font-size: 18px;
+}
+/* 공통 부분 끝 */

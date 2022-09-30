@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+.notice .inner {
+  flex-direction: column;
+  border-bottom: 1px solid #000000;
+}
+
+.notice-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.notice-info ul {
+  width: 18%;
+}
+
+.notice-info ul li a {
+  display: inline-block;
+  width: 83%;
+  height: 52px;
+  line-height: 52px;
+  background-color: #e3eef4;
+  padding-left: 20px;
+  margin-bottom: 5px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: #444444;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: -1px;
+}
+
+.notice-info ul li.notice-on a {
+  width: 90%;
+  background-color: #1769ab;
+  color: #ffffff;
+}
+
+.notice-contents {
+  width: 79%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.notice-contents article {
+  width: 21%;
+  border-bottom: 1px solid #333333;
+}
+
+.notice-con-head {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.notice-con-head .date {
+  display: inline-block;
+  width: 65px;
+  height: 65px;
+  line-height: 65px;
+  border-radius: 50%;
+  background-color: #eaebed;
+  text-align: center;
+  font-weight: 600;
+  color: #444444;
+}
+
+.notice-con-body {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.notice-con-body h4 {
+  font-size: 22px;
+  color: #444444;
+  letter-spacing: -1.5px;
+  line-height: 28px;
+}
+
+.notice-con-body p {
+  line-height: 22px;
+  letter-spacing: -1px;
+}
+
+.notice-media {
+  width: 100%;
+  height: 284px;
+  margin: 55px 0 30px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.notice-media article {
+  width: 23.5%;
+  position: relative;
+}
+
+.notice-media .title {
+  margin-bottom: 20px;
+}
+
+.notice-media .youtube.first-box .issue-img {
+  background: url(../img/20220926023047537.jpg) no-repeat center / cover;
+}
+
+.notice-media .youtube.second-box .issue-img {
+  background: url(../img/20220916011258944.jpg) no-repeat center / cover;
+}
+
+.notice-media .alert.first-box .issue-img {
+  background: url(../img/20220922095104173.jpg) no-repeat center / cover;
+}
+
+.notice-media .alert.second-box .issue-img {
+  background: url(../img/20220928043315155.jpg) no-repeat center / 100% 100%;
+}
+
+.notice-media .alert .issue-img {
+  height: 100%;
+}
