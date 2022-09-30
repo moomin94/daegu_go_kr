@@ -75,4 +75,8 @@ article .more {
   color: #000000;
   font-size: 18px;
 }
+
+.no-border {
+  border: none;
+}
 /* 공통 부분 끝 */

@@ -1,0 +1,179 @@
+@charset "UTF-8";
+
+.footer {
+  width: 100%;
+
+}
+
+.banner {
+  width: 100%;
+  height: 94px;
+  border-top: 1px solid #cccccc;
+  padding: 20px 0;
+  margin-top: 60px;
+}
+
+.banner .btn-wrap {
+  width: 15%;
+}
+
+.banner-wrap {
+  width: 85%;
+}
+
+.banner-wrap li {
+  float: left;
+  width: 15%;
+  height: 50px;
+  margin-right: 2%;
+  background-color: #ebecf1;
+}
+
+.banner-wrap li:last-child {
+  margin-right: 0;
+}
+
+.banner-wrap li a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  line-height: 50px;
+  text-align: center;
+  color: #444444;
+}
+
+.banner-wrap li a::after {
+  content: '';
+  display: inline-block;
+  overflow: hidden;
+  width: 16px;
+  height: 16px;
+  margin: -3px 0 0 5px;
+  background: url(../img/sp_main.png) no-repeat;
+  background-position: -209px -35px;
+  vertical-align: middle;
+}
+
+.go-menu-wrap {
+  width: 100%;
+  height: 60px;
+  background-color: #1c293c;
+}
+
+.go-menu-wrap .inner {
+  justify-content: space-between;
+}
+
+.go-menu-list {
+  display: none;
+}
+
+.go-menu-wrap .inner > ul {
+  width: 100%;
+  height: 100%;
+}
+
+.go-menu-wrap ul a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  line-height: 60px;
+  color: #ffffff;
+  padding-left: 20px;
+  border-left: 1px solid #ffffff;
+  position: relative;
+}
+
+.go-menu-wrap ul:last-child a {
+  border-right: 1px solid #ffffff;
+}
+
+.go-menu-wrap ul a::after {
+  content: '';
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #dddddd;
+  border-width: 0 1px 1px 0;
+  transform: rotate(45deg);
+  transition: all .3s;
+}
+
+.footer-wrap {
+  width: 100%;
+  background-color: #ebecf1;
+}
+
+.footer-wrap .inner {
+  flex-direction: column;
+}
+
+.footer-menu {
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 1px solid #cccccc;
+}
+
+.footer-menu li {
+  float: left;
+  margin: 0 10px;
+  position: relative;
+}
+
+.footer-menu li:first-child {
+  margin-left: 0;
+}
+
+.footer-menu li a {
+  font-size: 15px;
+  color: #333333;
+  letter-spacing: -1px;
+  line-height: 30px;
+}
+
+.footer-menu li:first-child a {
+  font-weight: 600;
+}
+
+.footer-menu li:not(:first-child)::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: -10px;
+  width: 2px;
+  height: 2px;
+  background-color: #333333;
+}
+
+.footer-bottom {
+  width: 100%;
+  padding: 25px 0 30px;
+  font-size: 14px;
+}
+
+.footer-logo {
+  float: left;
+}
+
+.footer-info {
+  float: left;
+  margin-left: 30px;
+}
+
+.footer-info p {
+  color: #444444;
+  margin-bottom: 5px;
+}
+
+.footer-info copyright {
+  color: #888888;
+  line-height: 20px;
+}
+
+.wa-banner {
+  float: right;
+  display: flex;
+  align-items: center;
+}
