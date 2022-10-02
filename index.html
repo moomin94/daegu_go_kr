@@ -68,14 +68,13 @@
         </ul>
 
         <div class="util-area">
-          <button class="login-menu-btn">로그인<i class="fa-solid fa-caret-down"></i></button>
           <div class="login-menu">
-              <ul>
-                <li><a href="#">로그인</a></li>
-                <li><a href="#">회원가입</a></li>
-              </ul>
-            </div>
-          <button class="lan-menu-btn">LANGUAGE<i class="fa-solid fa-caret-down"></i></button>
+            <ul>
+              <li><a href="#" class="login-menu-list">로그인</a></li>
+              <li><a href="#" class="login-menu-list">회원가입</a></li>
+            </ul>
+          </div>
+          <button class="login-menu-btn">로그인<i class="fa-solid fa-caret-down"></i></button>
           <div class="lan-menu">
               <ul>
                 <li><a href="#">English</a></li>
@@ -85,6 +84,7 @@
                 <li><a href="#">Arabic</a></li>
               </ul>
             </div>
+          <button class="lan-menu-btn">LANGUAGE<i class="fa-solid fa-caret-down"></i></button>
           <button class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
           <button class="menu-icon"><i class="fa-solid fa-bars"></i></button>
         </div>
@@ -168,8 +168,10 @@
         <div class="search-all-container">
           <div class="search-header">
             <div class="search-wrap">
-              <input type="text" class="search-input">
-              <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i>검색</button>
+              <p>통합검색</p>
+              <input type="text" class="search-input" id="search-all-input">
+              <label class="search-label" for="search-all-input"></label>
+              <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
             <ul>
               <li class="popular-word">인기검색어</li>
@@ -181,10 +183,42 @@
             </ul>
           </div>
           <div class="search-body">
-            <h4>상세검색</h4>
+            <h4><i class="fa-solid fa-desktop"></i><span>상세검색</span></h4>
             <div class="search-detail">
-              <div class="search-detail-check"></div>
-              <div class="search-detail-topic"></div>
+              <div class="search-detail-check">
+                <div class="range-wrap">
+                  <label for="search-range">검색범위</label>
+                  <select name="search-range" id="search-range">
+                    <option value="all">전체</option>
+                    <option value="title">제목</option>
+                    <option value="content">내용</option>
+                  </select>
+                </div>
+                <div class="date-wrap">
+                  <label for="search-date">검색기간</label>
+                  <input type="text" id="search-date" placeholder="ex)2016.01.01">
+                  <span>~</span>
+                  <input type="text" id="search-date" placeholder="ex)2016.11.11">
+                </div>
+                <div class="sort-wrap">
+                  <span>정렬방식</span>
+                  <input type="radio" id="sort-accurate" name="search-sort">
+                  <label for="sort-accurate">정확도</label>
+                  <input type="radio" id="sort-latest" name="search-sort">
+                  <label for="sort-latest">최신순</label>
+                </div>
+              </div>
+              <div class="search-detail-topic">
+                <h5 class="topic-title">분야별토픽</h5>
+                <ul class="topic-list">
+                  <li class="on"><a href="#">참여,소통</a></li>
+                  <li><a href="#">뉴스,소식</a></li>
+                  <li><a href="#">정보공개</a></li>
+                  <li><a href="#">전자민원</a></li>
+                  <li><a href="#">분야별정보</a></li>
+                  <li><a href="#">대구시소개</a></li>
+                </ul>
+              </div>
             </div>
           </div>
           <div class="search-footer">
@@ -210,18 +244,61 @@
         <section class="main-top">
           <article class="main-txt">
             <div class="main-txt-con">
-              <h2>대구에 빠지다!<br>가을에 빠지다!</h2>
-              <p>2022년 하반기 꼭 가봐야 할 대구축제<br>판타지아 대구페스티벌로 초대합니다!</p>
+              <h2 class="main-txt-title">제대로,<br>굳건하게,<br>살기 좋게</h2>
+              <p class="main-txt-text">글로벌 대구 제대로<br>미래번영 대구 굳건하게<br>혁신 행복 대구 살기좋게</p>
+            </div>
+            <div class="main-txt-con">
+              <h2 class="main-txt-title">대구에 빠지다!<br>가을에 빠지다!</h2>
+              <p class="main-txt-text">2022년 하반기 꼭 가봐야 할 대구축제<br>판타지아 대구페스티벌로 초대합니다!</p>
+            </div>
+            <div class="main-txt-con">
+              <h2 class="main-txt-title">고품격<br>신천수변공원 조성</h2>
+              <p class="main-txt-text">야외공간에서 다양한 활동을 요구하는 시민<br>눈높이에 맞춰 신천을 생태·문화·활력·스마트한
+                <br>고품격 수변공원으로 조성합니다.
+              </p>
+            </div>
+            <div class="main-txt-con">
+              <h2 class="main-txt-title">제19회 대구국제<br>오페라축제</h2>
+              <p class="main-txt-text">열 아홉 번째 오페라의 가을,<br>대구국제오페라축제가 9월 23일에서
+                <br>11월 19일까지 총 58일간 대구오페라하우스를<br>비롯한 일원에서 펼쳐집니다.
+              </p>
+            </div>
+            <div class="main-txt-con">
+              <h2 class="main-txt-title">대구경북<br>통합신공항<br>청사진 마련</h2>
+              <p class="main-txt-text">대구경북 미래 50년 번영의 토대가 될<br>대구경북 통합신공항!</p>
+            </div>
+            <div class="main-txt-con">
+              <h2 class="main-txt-title">글로벌<br>내륙수변도시</h2>
+              <p class="main-txt-text">도심하천인 금호강을 시민 이용중심의<br>금호강으로 탈바꿈시키고자 금호강 르네상스
+                <br>마스터플랜을 마련했습니다.
+              </p>
             </div>
             <div class="main-txt-btn">
-              <button><i class="fa-solid fa-angle-left"></i></button>
-              <p><span>5</span>/6</p>
-              <button><i class="fa-solid fa-angle-right"></i></button>
-              <button><i class="fa-solid fa-play"></i></button>
+              <button class="main-txt-left"><i class="fa-solid fa-angle-left"></i></button>
+              <p><span class="main-txt-num">1</span>/6</p>
+              <button class="main-txt-right"><i class="fa-solid fa-angle-right"></i></button>
+              <button class="main-txt-pause"><i class="fa-solid fa-pause"></i></button>
             </div>
           </article>
           <article class="main-img">
-            <img src="./img/mainbg-5.jpg" alt="main-bg-5">
+            <a href="https://www.youtube.com/watch?v=8kirK_wmn4Q" target="_blank">
+              <img src="./img/mainbg-1.jpg" alt="main-bg-1">
+            </a>
+            <a href="https://fantasiafestival.or.kr/fantasiaFestival.php" target="_blank">
+              <img src="./img/mainbg-2.jpg" alt="main-bg-2">
+            </a>
+            <a href="https://info.daegu.go.kr/newshome/mtnmain.php?mtnkey=articleview&mkey=scatelist&mkey2=1&aid=256425&bpage=1&stext=" target="_blank">
+              <img src="./img/mainbg-3.jpg" alt="main-bg-3">
+            </a>
+            <a href="https://info.daegu.go.kr/newshome/mtnmain.php?mtnkey=articleview&mkey=scatelist&mkey2=2&aid=256379&bpage=1&stext=" target="_blank">
+              <img src="./img/mainbg-4.jpg" alt="main-bg-4">
+            </a>
+            <a href="https://info.daegu.go.kr/newshome/mtnmain.php?mtnkey=articleview&mkey=scatelist&mkey2=1&aid=256332&bpage=1&stext=" target="_blank">
+              <img src="./img/mainbg-5.jpg" alt="main-bg-5">
+            </a>
+            <a href="https://info.daegu.go.kr/newshome/mtnmain.php?mtnkey=articleview&mkey=scatelist&mkey2=1&aid=256349&bpage=1&stext=" target="_blank">
+              <img src="./img/mainbg-6.jpg" alt="main-bg-6">
+            </a>
           </article>
           <article class="main-mayor">
             <div class="weather">
