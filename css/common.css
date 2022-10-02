@@ -38,6 +38,7 @@ article .contents {
   width: 100%;
   height: 242px;
   border: 1px solid #cccccc;
+  cursor: pointer;
 }
 
 article .more {

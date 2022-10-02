@@ -11,11 +11,15 @@
   justify-content: space-between;
 }
 
-.notice-info ul {
+.notice-info > ul {
   width: 18%;
 }
 
-.notice-info ul li a {
+.notice-info > ul li {
+  position: relative;
+}
+
+.notice-info > ul li a {
   display: inline-block;
   width: 83%;
   height: 52px;
@@ -29,12 +33,22 @@
   font-weight: 600;
   font-size: 18px;
   letter-spacing: -1px;
+  transition: all .3s;
 }
 
-.notice-info ul li.notice-on a {
+.notice-info > ul li.notice-on a {
   width: 90%;
   background-color: #1769ab;
   color: #ffffff;
+}
+
+.notice-info > ul li i {
+  position: absolute;
+  top: 17px;
+  right: 43px;
+  color: #ffffff;
+  font-size: 18px;
+  transition: all .3s;
 }
 
 .notice-contents {
@@ -43,7 +57,11 @@
   justify-content: space-between;
 }
 
-.notice-contents article {
+.hidden {
+  display: none;
+}
+
+.notice-contents > article {
   width: 21%;
   border-bottom: 1px solid #333333;
 }
@@ -65,6 +83,7 @@
   background-color: #eaebed;
   text-align: center;
   font-weight: 600;
+  font-size: 14px;
   color: #444444;
 }
 
@@ -86,6 +105,44 @@
 .notice-con-body p {
   line-height: 22px;
   letter-spacing: -1px;
+}
+
+.notice-contents:nth-of-type(even) {
+  flex-direction: row;
+}
+
+.notice-contents:nth-of-type(even) article {
+  width: 47%;
+  border-bottom: none;
+}
+
+.notice-contents:nth-of-type(even) article ul {
+}
+
+.notice-contents:nth-of-type(even) article ul li {
+  border-bottom: 1px solid #333333;
+}
+
+.notice-contents:nth-of-type(even) .data-date {
+  display: inline-block;
+  width: 65px;
+  height: 65px;
+  line-height: 65px;
+  border-radius: 50%;
+  background-color: #eaebed;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #444444;
+  margin: 14px 0 13px;
+}
+
+.notice-contents:nth-of-type(even) .data-txt {
+  margin-left: 10px;
+  font-weight: 600;
+  color: #444444;
+  font-size: 18px;
+  letter-spacing: -2px;
 }
 
 .notice-media {

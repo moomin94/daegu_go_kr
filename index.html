@@ -77,11 +77,11 @@
           <button class="login-menu-btn">로그인<i class="fa-solid fa-caret-down"></i></button>
           <div class="lan-menu">
               <ul>
-                <li><a href="#">English</a></li>
-                <li><a href="#">简体中文</a></li>
-                <li><a href="#">繁體中文</a></li>
-                <li><a href="#">日本語</a></li>
-                <li><a href="#">Arabic</a></li>
+                <li><a href="#" class="lan-menu-list">English</a></li>
+                <li><a href="#" class="lan-menu-list">简体中文</a></li>
+                <li><a href="#" class="lan-menu-list">繁體中文</a></li>
+                <li><a href="#" class="lan-menu-list">日本語</a></li>
+                <li><a href="#" class="lan-menu-list">Arabic</a></li>
               </ul>
             </div>
           <button class="lan-menu-btn">LANGUAGE<i class="fa-solid fa-caret-down"></i></button>
@@ -448,13 +448,204 @@
       <div class="inner">
         <div class="notice-info">
           <ul>
-            <li class="notice-on"><a href="#">공지사항</a></li>
-            <li><a href="#">보도자료</a></li>
-            <li><a href="#">시험정보</a></li>
-            <li><a href="#">고시공고</a></li>
-            <li><a href="#">공모/모집</a></li>
+            <li class="notice-on">
+              <a href="#" data-num="0">공지사항</a>
+              <i class="fa-solid fa-plus"></i>
+            </li>
+            <li>
+              <a href="#" data-num="1">보도자료</a>
+              <i class="fa-solid fa-minus"></i>
+            </li>
+            <li>
+              <a href="#" data-num="2">시험정보</a>
+              <i class="fa-solid fa-minus"></i>
+            </li>
+            <li>
+              <a href="#" data-num="3">고시공고</a>
+              <i class="fa-solid fa-minus"></i>
+            </li>
+            <li>
+              <a href="#" data-num="4">공모/모집</a>
+              <i class="fa-solid fa-minus"></i>
+            </li>
           </ul>
           <section class="notice-contents">
+            <article>
+              <div class="notice-con-head">
+                <span class="date">09.29</span>
+                <span class="department">도시계획과</span>
+              </div>
+              <div class="notice-con-body">
+                <h4>전략환경영향평가서 주민등의 의견수렴 결과 및 반영여부 공개...</h4>
+                <p>대구광역시 남구 봉덕동 산39-<br>1번지 및 수성구 파동 산120번지<br>일원에 공원 조성을 위한...</p>
+              </div>
+            </article>
+            <article>
+              <div class="notice-con-head">
+                <span class="date">09.29</span>
+                <span class="department">보건의료정책관</span>
+              </div>
+              <div class="notice-con-body">
+                <h4>대구광역시 건강 불평등 이야기<br>NO.11(칠곡경북대학교...</h4>
+                <p>대구시와 지역 내 22개<br>공공보건의료기관은<br>공공보건의료기관 협의체를...</p>
+              </div>
+            </article>
+            <article>
+              <div class="notice-con-head">
+                <span class="date">09.29</span>
+                <span class="department">농산유통과</span>
+              </div>
+              <div class="notice-con-body">
+                <h4>위해 축산물 긴급 회수<br>공표</h4>
+                <p>1. 축산물 위생관리법 제3조의2에<br>따라 아래의 축산물을 긴급<br>회수합니다. 2. 용인시 소재...</p>
+              </div>
+            </article>
+            <article>
+              <div class="notice-con-head">
+                <span class="date">09.29</span>
+                <span class="department">교통정책과</span>
+              </div>
+              <div class="notice-con-body">
+                <h4>2022년도 주차장 개방<br>공유사업 안내</h4>
+                <p>□ 추진절차 ①개방신청(건물주→구.군) ☞ ②대상 선정(구.군) ☞ ③약정 체결(건물주, 구.군, 이용자) ...</p>
+              </div>
+            </article>
+          </section>
+          <section class="notice-contents hidden">
+            <article>
+              <ul>
+                <li>
+                  <a href="#">
+                    <span class="data-date">09.30</span>
+                    <span class="data-txt">대구광역시 보도자료(2022-09-30)</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="data-date">09.29</span>
+                    <span class="data-txt">대구광역시 보도자료(2022-09-30)</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="data-date">09.28</span>
+                    <span class="data-txt">대구광역시 보도자료(2022-09-30)</span>
+                  </a>
+                </li>
+              </ul>
+            </article>
+            <article>
+              <ul>
+                <li>
+                  <a href="#">
+                    <span class="data-date">09.27</span>
+                    <span class="data-txt">대구광역시 보도자료(2022-09-30)</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="data-date">09.26</span>
+                    <span class="data-txt">대구광역시 보도자료(2022-09-30)</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="data-date">09.25</span>
+                    <span class="data-txt">대구광역시 보도자료(2022-09-30)</span>
+                  </a>
+                </li>
+              </ul>
+            </article>
+          </section>
+          <section class="notice-contents hidden">
+            <article>
+              <div class="notice-con-head">
+                <span class="date">09.29</span>
+                <span class="department">도시계획과</span>
+              </div>
+              <div class="notice-con-body">
+                <h4>전략환경영향평가서 주민등의 의견수렴 결과 및 반영여부 공개...</h4>
+                <p>대구광역시 남구 봉덕동 산39-<br>1번지 및 수성구 파동 산120번지<br>일원에 공원 조성을 위한...</p>
+              </div>
+            </article>
+            <article>
+              <div class="notice-con-head">
+                <span class="date">09.29</span>
+                <span class="department">보건의료정책관</span>
+              </div>
+              <div class="notice-con-body">
+                <h4>대구광역시 건강 불평등 이야기<br>NO.11(칠곡경북대학교...</h4>
+                <p>대구시와 지역 내 22개<br>공공보건의료기관은<br>공공보건의료기관 협의체를...</p>
+              </div>
+            </article>
+            <article>
+              <div class="notice-con-head">
+                <span class="date">09.29</span>
+                <span class="department">농산유통과</span>
+              </div>
+              <div class="notice-con-body">
+                <h4>위해 축산물 긴급 회수<br>공표</h4>
+                <p>1. 축산물 위생관리법 제3조의2에<br>따라 아래의 축산물을 긴급<br>회수합니다. 2. 용인시 소재...</p>
+              </div>
+            </article>
+            <article>
+              <div class="notice-con-head">
+                <span class="date">09.29</span>
+                <span class="department">교통정책과</span>
+              </div>
+              <div class="notice-con-body">
+                <h4>2022년도 주차장 개방<br>공유사업 안내</h4>
+                <p>□ 추진절차 ①개방신청(건물주→구.군) ☞ ②대상 선정(구.군) ☞ ③약정 체결(건물주, 구.군, 이용자) ...</p>
+              </div>
+            </article>
+          </section>
+          <section class="notice-contents hidden">
+            <article>
+              <ul>
+                <li>
+                  <a href="#">
+                    <span class="data-date">09.30</span>
+                    <span class="data-txt">대구광역시 보도자료(2022-09-30)</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="data-date">09.29</span>
+                    <span class="data-txt">대구광역시 보도자료(2022-09-30)</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="data-date">09.28</span>
+                    <span class="data-txt">대구광역시 보도자료(2022-09-30)</span>
+                  </a>
+                </li>
+              </ul>
+            </article>
+            <article>
+              <ul>
+                <li>
+                  <a href="#">
+                    <span class="data-date">09.27</span>
+                    <span class="data-txt">대구광역시 보도자료(2022-09-30)</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="data-date">09.26</span>
+                    <span class="data-txt">대구광역시 보도자료(2022-09-30)</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="data-date">09.25</span>
+                    <span class="data-txt">대구광역시 보도자료(2022-09-30)</span>
+                  </a>
+                </li>
+              </ul>
+            </article>
+          </section>
+          <section class="notice-contents hidden">
             <article>
               <div class="notice-con-head">
                 <span class="date">09.29</span>

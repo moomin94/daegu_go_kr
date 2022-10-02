@@ -18,12 +18,26 @@ $(function(){
   });
 
   // login, language toggle
-
   $('.login-menu-btn').click(function(){
     $('.login-menu').toggleClass('on');
   });
   $('.lan-menu-btn').click(function(){
     $('.lan-menu').toggleClass('on');
+  });
+  $(document).click(function(e){
+    let cName = e.target.className;
+    if(cName != 'login-menu-btn' && cName != 'login-menu on'
+      && cName != 'login-menu-list' && cName != 'fa-solid fa-caret-down'){
+      if($('.util-area > div').eq(0).hasClass('on')){
+        $('.util-area > div').eq(0).removeClass('on');
+      }
+    };
+    if(cName != 'fa-solid fa-caret-down' && cName != 'lan-menu-btn'
+      && cName != 'lan-menu on' && cName != 'lan-menu-list'){
+      if($('.util-area > div').eq(1).hasClass('on')){
+        $('.util-area > div').eq(1).removeClass('on');
+      }
+    };
   });
 
   // search modal open
@@ -131,4 +145,20 @@ $(function(){
     slideToNext();
     next = setInterval(slideToNext,3500);
   });
+
+  // notice btn list animation
+  $('.notice-info li a').click(function(e){
+    e.preventDefault();
+    $('.notice-info li').removeClass('notice-on');
+    $(this).parent().addClass('notice-on');
+    $('.notice-info li i').attr('class', 'fa-solid fa-minus');
+    $(this).next().attr('class', 'fa-solid fa-plus');
+    let noticeNum = $(this).data("num");
+    console.log(noticeNum, $('.notice-contents'));
+    $('.notice-contents').addClass('hidden');
+    $('.notice-contents').eq(noticeNum).removeClass('hidden');
+  });
+
+  //notice contents show hidden
+
 })
