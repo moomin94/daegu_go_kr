@@ -94,7 +94,6 @@ $(function(){
     });
     $('.main-txt-num').text(imgNum+1);
     imgNum++;
-    console.log(imgNum);
   };
 
   let slideToPrev = function(){
@@ -158,6 +157,79 @@ $(function(){
     $('.notice-contents').addClass('hidden');
     $('.notice-contents').eq(noticeNum).removeClass('hidden');
   });
+
+  // 대구시 운영서비스 slide
+  let slideWrap = $('.service-menu-wrap')
+  let slideUl = $('.service-menu-wrap > ul');
+  let cloneFirst = slideUl.eq(0).clone();
+  let cloneLast = slideUl.eq(1).clone();
+  let serviceNum = 0;
+  $('.service-menu').hover(
+    function(){
+      clearInterval(autoSlide);
+    },
+    function(){
+      if($('.service-pause').children().attr('class') == 'fa-solid fa-pause'){
+        autoSlide = setInterval(goNextService, 3000);
+      }else{
+        clearInterval(autoSlide);
+      }
+    }
+  )
+  function goNextService(){
+    if(serviceNum == 0){
+      slideWrap.animate({left: '-524px'},500,function(){
+        serviceNum++;
+        cloneFirst.css('left','1048px');
+        slideWrap.append(cloneFirst);
+      });
+    }else if(serviceNum == 1){
+      slideWrap.animate({left: '-1048px'},500,function(){
+        $(this).css({'left': '0px', 'transition': 'all 0s'});
+      });
+      serviceNum--;
+    }
+  };
+  let autoSlide = setInterval(goNextService, 3000);
+  $('.page-btn.right').click(function(){
+    clearInterval(autoSlide);
+    goNextService();
+    if($('.service-pause').children().attr('class') == 'fa-solid fa-pause'){
+      autoSlide = setInterval(goNextService, 3000);
+    }else{
+      clearInterval(autoSlide);
+    }
+  });
+  $('.page-btn.left').click(function(){
+    clearInterval(autoSlide);
+    if(serviceNum == 0){
+      slideWrap.prepend(cloneLast);
+      cloneLast.css('left', '-524px');
+      slideWrap.animate({left: '524px'},500,function(){
+        $(this).css({'left': '-524px', 'transition': 'all 0s'});
+        serviceNum++;
+      });
+    }else if(serviceNum == 1){
+      slideWrap.animate({left: '0px'},500);
+      serviceNum--;
+    }
+    if($('.service-pause').children().attr('class') == 'fa-solid fa-pause'){
+      autoSlide = setInterval(goNextService, 3000);
+    }else{
+      clearInterval(autoSlide);
+    }
+  });
+
+  $('.service-pause').click(function(){
+    if($(this).children().attr('class') == 'fa-solid fa-pause'){
+      clearInterval(autoSlide);
+      $(this).children().attr('class', 'fa-solid fa-play');
+    }else {
+      clearInterval(autoSlide);
+      autoSlide = setInterval(goNextService, 3000);
+      $(this).children().attr('class', 'fa-solid fa-pause');
+    }
+  })
 
   // footer 내 바로가기 메뉴 toggle
   $('.go-menu-wrap .inner > ul > li > a').click(function(e){
