@@ -159,5 +159,11 @@ $(function(){
     $('.notice-contents').eq(noticeNum).removeClass('hidden');
   });
 
+  // footer 내 바로가기 메뉴 toggle
+  $('.go-menu-wrap .inner > ul > li > a').click(function(e){
+    e.preventDefault();
+    // $('.go-menu-wrap .inner > ul > li').removeClass('active');
+    $(this).parent().toggleClass('active');
+  });
 
 })
