@@ -159,6 +159,5 @@ $(function(){
     $('.notice-contents').eq(noticeNum).removeClass('hidden');
   });
 
-  //notice contents show hidden
 
 })
