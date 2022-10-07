@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="./img/favi/favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="./img/favi/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./img/favi/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./img/favi/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./img/favi/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./img/favi/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./img/favi/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./img/favi/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./img/favi/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favi/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="./img/favi/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favi/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./img/favi/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favi/favicon-16x16.png">
+  <link rel="manifest" href="./img/favi/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./img/favi/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <title>정보공개</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="./css/initial.min.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/sub-page-common.css">
+  <link rel="stylesheet" href="./css/information.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <script type="text/javascript" src="./js/jquery-3.6.1.min.js"></script>
+  <script type="text/javascript" src="./js/common.js"></script>
+  <script type="text/javascript" src="./js/sub-page.js"></script>
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ebd624604679e194022b18dcbabda5e1"></script>
+  <script type="text/javascript" src="./js/map.js"></script>
+</head>
+<body>
+  <div id="wrap" class="sub">
+    <!-- header area -->
+    <header class="header">
+      <div class="inner">
+        <h1 class="logo">
+          <a href="index.html"><img src="./img/logo.png" alt="logo"></a>
+        </h1>
+        <ul class="gnb">
+          <li><a href="#">민원·소통·참여</a></li>
+          <li><a href="#">정보공개</a></li>
+          <li><a href="#">대구소개</a></li>
+          <li><a href="#">분야별정보</a></li>
+        </ul>
+
+        <div class="util-area">
+          <div class="login-menu">
+            <ul>
+              <li><a href="#" class="login-menu-list">로그인</a></li>
+              <li><a href="#" class="login-menu-list">회원가입</a></li>
+            </ul>
+          </div>
+          <button class="login-menu-btn">로그인<i class="fa-solid fa-caret-down"></i></button>
+          <div class="lan-menu">
+              <ul>
+                <li><a href="#" class="lan-menu-list">English</a></li>
+                <li><a href="#" class="lan-menu-list">简体中文</a></li>
+                <li><a href="#" class="lan-menu-list">繁體中文</a></li>
+                <li><a href="#" class="lan-menu-list">日本語</a></li>
+                <li><a href="#" class="lan-menu-list">Arabic</a></li>
+              </ul>
+            </div>
+          <button class="lan-menu-btn">LANGUAGE<i class="fa-solid fa-caret-down"></i></button>
+          <button class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+          <button class="menu-icon"><i class="fa-solid fa-bars"></i></button>
+        </div>
+
+      </div>
+
+      <!-- hidden all menu -->
+      <div class="gnb-all-wrap">
+        <div class="inner">
+          <ul class="gnb-all-main">
+          <li>
+            <h4><a href="communication.html">민원·소통·참여</a></h4>
+            <ul class="gnb-all-sub">
+              <li><a href="communication.html">민원안내</a></li>
+              <li><a href="#">두드리소(민원/제안)</a></li>
+              <li><a href="#">사이버추모관</a></li>
+              <li><a href="#">안전신문고</a></li>
+              <li><a href="#">대구시민원탁회의</a></li>
+              <li><a href="#">공익제보</a></li>
+              <li><a href="#">공공재정 부정청구 신고</a></li>
+              <li><a href="#">공직비리 익명신고</a></li>
+              <li><a href="#">복지 및 인권옴부즈만</a></li>
+              <li><a href="#">행정서비스 헌장</a></li>
+              <li><a href="#">대구시민헌장</a></li>
+              <li><a href="#">행복민원배심원제</a></li>
+              <li><a href="#">시민 참여</a></li>
+              <li><a href="#">지방분권</a></li>
+              <li><a href="#">정책토론</a></li>
+              <li><a href="#">설문/투표</a></li>
+              <li><a href="#">토크대구</a></li>
+            </ul>
+          </li>
+          <li>
+            <h4><a href="information.html">정보공개</a></h4>
+            <ul class="gnb-all-sub">
+              <li><a href="information.html">행정정보공개</a></li>
+              <li><a href="#">정책실명제</a></li>
+              <li><a href="#">알림정보</a></li>
+              <li><a href="#">통합자료실</a></li>
+              <li><a href="#">공공저작물</a></li>
+              <li><a href="#">공공데이터개방</a></li>
+              <li><a href="#">계약정보</a></li>
+              <li><a href="#">감사정보</a></li>
+              <li><a href="#">통계정보</a></li>
+            </ul>
+          </li>
+          <li>
+            <h4><a href="introduce.html">대구소개</a></h4>
+            <ul class="gnb-all-sub">
+              <li><a href="introduce.html">시정비전</a></li>
+              <li><a href="#">시청안내</a></li>
+              <li><a href="#">일반현황</a></li>
+              <li><a href="#">대구의 상징</a></li>
+              <li><a href="#">스토리인대구</a></li>
+              <li><a href="#">역사</a></li>
+              <li><a href="#">대구광역시뉴스룸</a></li>
+              <li><a href="#">교류도시</a></li>
+            </ul>
+          </li>
+          <li>
+            <h4><a href="#">분야별정보</a></h4>
+            <ul class="gnb-all-sub">
+              <li><a href="#">문화·관광·체육</a></li>
+              <li><a href="#">교통</a></li>
+              <li><a href="#">복지</a></li>
+              <li><a href="#">여성·가족·교육</a></li>
+              <li><a href="#">건강·보건·위생</a></li>
+              <li><a href="#">산업·경제</a></li>
+              <li><a href="#">환경</a></li>
+              <li><a href="#">소방·안전</a></li>
+              <li><a href="#">도시주택·건설</a></li>
+              <li><a href="#">행정·재정·세정</a></li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+      </div>
+
+      <!-- search icon 클릭시 나타나는 화면 -->
+      <div class="search-all-wrap">
+        <div class="search-all-container">
+          <div class="search-header">
+            <div class="search-wrap">
+              <p>통합검색</p>
+              <input type="text" class="search-input" id="search-all-input">
+              <label class="search-label" for="search-all-input"></label>
+              <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <ul>
+              <li class="popular-word">인기검색어</li>
+              <li><a href="#">교류</a></li>
+              <li><a href="#">채용</a></li>
+              <li><a href="#">조직도</a></li>
+              <li><a href="#">미분양</a></li>
+              <li><a href="#">김현진</a></li>
+            </ul>
+          </div>
+          <div class="search-body">
+            <h4><i class="fa-solid fa-desktop"></i><span>상세검색</span></h4>
+            <div class="search-detail">
+              <div class="search-detail-check">
+                <div class="range-wrap">
+                  <label for="search-range">검색범위</label>
+                  <select name="search-range" id="search-range">
+                    <option value="all">전체</option>
+                    <option value="title">제목</option>
+                    <option value="content">내용</option>
+                  </select>
+                </div>
+                <div class="date-wrap">
+                  <label for="search-date">검색기간</label>
+                  <input type="text" id="search-date" placeholder="ex)2016.01.01">
+                  <span>~</span>
+                  <input type="text" id="search-date" placeholder="ex)2016.11.11">
+                </div>
+                <div class="sort-wrap">
+                  <span>정렬방식</span>
+                  <input type="radio" id="sort-accurate" name="search-sort">
+                  <label for="sort-accurate">정확도</label>
+                  <input type="radio" id="sort-latest" name="search-sort">
+                  <label for="sort-latest">최신순</label>
+                </div>
+              </div>
+              <div class="search-detail-topic">
+                <h5 class="topic-title">분야별토픽</h5>
+                <ul class="topic-list">
+                  <li class="on"><a href="#">참여,소통</a></li>
+                  <li><a href="#">뉴스,소식</a></li>
+                  <li><a href="#">정보공개</a></li>
+                  <li><a href="#">전자민원</a></li>
+                  <li><a href="#">분야별정보</a></li>
+                  <li><a href="#">대구시소개</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="search-footer">
+            <p>닫기</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- main contents area -->
+    <div class="main-wrap">
+      <div class="inner">
+        <!-- left menu area -->
+        <div class="left-menu-wrap">
+          <div class="left-menu-title">
+            <i class="fa-solid fa-circle-info"></i>
+            <h2>정보공개</h2>
+          </div>
+          <div class="left-menu-list">
+            <ul>
+              <li class="menu-list-title on">
+                <a href="#">행정정보공개<span class="unfd"></span></a>
+                <ul class="active">
+                  <li class="sub-menu-title">
+                    <a href="#">시장 책상위 결재서류</a>
+                  </li>
+                  <li class="sub-menu-title on">
+                    <a href="communication.html">정보공개제도안내</a>
+                    <ul class="sub-menu-list">
+                      <li class="on"><a href="communication.html">정보공개접수창구</a></li>
+                      <li><a href="#">제도안내</a></li>
+                      <li><a href="#">사무편란</a></li>
+                      <li><a href="#">비공개세부기준</a></li>
+                      <li><a href="#">수수료기준</a></li>
+                      <li><a href="#">행정정보소재안내</a></li>
+                    </ul>
+                  </li>
+                  <li class="sub-menu-title">
+                    <a href="#">사전정보공개</a>
+                    <ul class="sub-menu-list">
+                      <li><a href="#">공개내용</a></li>
+                    </ul>
+                  </li>
+                  <li class="sub-menu-title">
+                    <a href="#">정보목록</a>
+                    <ul class="sub-menu-list">
+                      <li><a href="#">2014년 2월 이전 정보목록</a></li>
+                      <li><a href="#">2014년 3월 이후 정보목록</a></li>
+                    </ul>
+                  </li>
+                  <li class="sub-menu-title">
+                    <a href="#">업무추진비</a>
+                  </li>
+                  <li class="sub-menu-title">
+                    <a href="#">정보공개청구</a>
+                  </li>
+                  <li class="sub-menu-title">
+                    <a href="#">위원회정보</a>
+                    <ul class="sub-menu-list">
+                      <li><a href="#">위원회 현황</a></li>
+                      <li><a href="#">위원회 회의 정보</a></li>
+                    </ul>
+                  </li>
+                  <li class="sub-menu-title">
+                    <a href="#">상품권 구매·사용내역</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-list-title">
+                <a href="#">정책실명제<span class="unfd"></span></a>
+                <ul>
+                  <li class="sub-menu-title">
+                    <a href="#">정책실명제 소개</a>
+                  </li>
+                  <li class="sub-menu-title">
+                    <a href="#">국민신청실명제</a>
+                  </li>
+                  <li class="sub-menu-title">
+                    <a href="#">정책실명 공개자료</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-list-title"><a href="#">알림정보</a></li>
+              <li class="menu-list-title"><a href="#">통합자료실</a></li>
+              <li class="menu-list-title"><a href="#">공공저작물</a></li>
+              <li class="menu-list-title"><a href="#">공공데이터개방</a></li>
+              <li class="menu-list-title"><a href="#">계약정보</a></li>
+              <li class="menu-list-title"><a href="#">감사정보</a></li>
+              <li class="menu-list-title"><a href="#">통계정보</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="main-con-wrap">
+          <div class="main-con-header">
+            <h1>정보공개접수창구</h1>
+            <ul class="breadcrumb info">
+              <li><i class="fa-solid fa-house-chimney"></i></li>
+              <li>정보공개</li>
+              <li>행정정보공개</li>
+              <li>정보공개제도안내</li>
+              <li>정보공개접수창구</li>
+            </ul>
+            <ul class="sns-btns">
+              <li><a href="#" class="print-btn"></a></li>
+              <li><a href="#" class="plus-btn"></a></li>
+              <li><a href="#" class="minus-btn"></a></li>
+              <li><a href="#" class="facebook-btn"></a></li>
+              <li><a href="#" class="twitter-btn"></a></li>
+              <li><a href="#" class="kakao-btn"></a></li>
+            </ul>
+          </div>
+          <div class="main-con-body">
+            <div class="info-text">
+              <h4 class="info-title">대구광역시 정보공개접수 창구</h4>
+              <ul>
+                <li><strong>사무실 위치</strong> : 대구광역시 중구 공평로 88 대구광역시청(기록관리실)</li>
+                <li><strong>전화번호</strong> : 053-803-2791</li>
+                <li><strong>팩스번호</strong> : 053-220-9080</li>
+              </ul>
+            </div>
+            <div class="info-map">
+              <h4 class="info-title">대구광역시 정보공개 청구기관</h4>
+              <div class="map-wrap" id="map"></div>
+            </div>
+            <form class="search-wrap">
+              <div class="search-box">
+                <select name="searchCondition" class="select">
+                  <option value="기관구분">기관구분</option>
+                  <option value="기관명">기관명</option>
+                  <option value="주소">주소</option>
+                  <option value="전화번호">전화번호</option>
+                  <option value="팩스번호">팩스번호</option>
+                </select>
+                <input type="text" class="search-input">
+                <button type="submit" class="search-btn">조회</button>
+              </div>
+              <table class="con-table">
+                <tr>
+                  <th>기관구분</th>
+                  <th>기관명</th>
+                  <th>주소</th>
+                  <th>전화번호</th>
+                  <th>팩스번호</th>
+                  <th>위치보기</th>
+                </tr>
+                <tr>
+                  <td>공사·공단</td>
+                  <td>대구도시공사</td>
+                  <td>대구 북구 침산로 73 (고성동3가, 도시개발공사 사옥)</td>
+                  <td>053)111-1111</td>
+                  <td>053)111-1111</td>
+                  <td><a class="link_button location" data-id="0"></a></td>
+                </tr>
+                <tr>
+                  <td>공사·공단</td>
+                  <td>대구도시철도공사</td>
+                  <td>대구 달서구 월배로 250 (상인동)</td>
+                  <td>053)111-1111</td>
+                  <td>053)111-1111</td>
+                  <td><a class="link_button location" data-id="1"></a></td>
+                </tr>
+                <tr>
+                  <td>공사·공단</td>
+                  <td>대구시설공단</td>
+                  <td>대구 남구 대명로 29 (대명동, 대구광역시 시설관리공단)</td>
+                  <td>053)111-1111</td>
+                  <td>053)111-1111</td>
+                  <td><a class="link_button location" data-id="2"></a></td>
+                </tr>
+                <tr>
+                  <td>공사·공단</td>
+                  <td>대구환경공단</td>
+                  <td>대구 달서구 달서대로 210 (대천동)</td>
+                  <td>053)111-1111</td>
+                  <td>053)111-1111</td>
+                  <td><a class="link_button location" data-id="3"></a></td>
+                </tr>
+                <tr>
+                  <td>출연기관</td>
+                  <td>대구의료원</td>
+                  <td>대구 서구 평리로 157 (중리동, 대구의료원)</td>
+                  <td>053)111-1111</td>
+                  <td>053)111-1111</td>
+                  <td><a class="link_button location" data-id="4"></a></td>
+                </tr>
+                <tr>
+                  <td>출자기관</td>
+                  <td>(주)엑스코</td>
+                  <td>대구 북구 엑스코로 10 (산격동)</td>
+                  <td>053)111-1111</td>
+                  <td>053)111-1111</td>
+                  <td><a class="link_button location" data-id="5"></a></td>
+                </tr>
+                <tr>
+                  <td>출연기관</td>
+                  <td>대구경북연구원</td>
+                  <td>대구 수성구 청수로 43 (중동, 대구파이낸스센터)</td>
+                  <td>053)111-1111</td>
+                  <td>053)111-1111</td>
+                  <td><a class="link_button location" data-id="6"></a></td>
+                </tr>
+                <tr>
+                  <td>출연기관</td>
+                  <td>대구신용보증재단</td>
+                  <td>대구 달서구 달구버대로 1568 (감삼동)</td>
+                  <td>053)111-1111</td>
+                  <td>053)111-1111</td>
+                  <td><a class="link_button location" data-id="7"></a></td>
+                </tr>
+                <tr>
+                  <td>출연기관</td>
+                  <td>대구테크노파크</td>
+                  <td>대구 동구 동대구로 475 (신천동, 벤처센터빌딩)</td>
+                  <td>053)111-1111</td>
+                  <td>053)111-1111</td>
+                  <td><a class="link_button location" data-id="8"></a></td>
+                </tr>
+                <tr>
+                  <td>출연기관</td>
+                  <td>대구디지털산업진흥원</td>
+                  <td>대구 수성구 알파시티1로 170(대흥동, SW융합기술지원센터)</td>
+                  <td>053)111-1111</td>
+                  <td>053)111-1111</td>
+                  <td><a class="link_button location" data-id="9"></a></td>
+                </tr>
+              </table>
+            </form>
+
+          </div>
+          <div class="main-con-footer">
+            <div class="con-footer-top">
+              <div class="con-rating">
+                <h4>현재페이지의 내용과 사용편의성에 만족하십니까?</h4>
+                <input type="radio" id="5" name="rating">
+                <label for="5">매우 만족</label>
+                <input type="radio" id="4" name="rating">
+                <label for="4">만족</label>
+                <input type="radio" id="3" name="rating">
+                <label for="3">보통</label>
+                <input type="radio" id="2" name="rating">
+                <label for="2">불만족</label>
+                <input type="radio" id="1" name="rating">
+                <label for="1">매우 불만족</label>
+              </div>
+              <button>평가하기</button>
+            </div>
+            <div class="con-footer-bottom">
+              <ul>
+                <li>담당부서 <span>총무과</span></li>
+                <li>담당자 <span>이미자</span></li>
+                <li>전화번호 <span>053-000-0000</span></li>
+              </ul>
+              <p>최근수정일 <span>2022.02.07</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer area -->
+    <footer class="footer">
+      <div class="footer-wrap">
+        <div class="inner">
+          <ul class="footer-menu">
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">저작권정책</a></li>
+            <li><a href="#">행정서비스 헌장</a></li>
+            <li><a href="#">뷰어다운로드</a></li>
+            <li><a href="#">관련기관</a></li>
+            <li><a href="#">전화번호(FAX)안내</a></li>
+            <li><a href="#">공공앱소개</a></li>
+            <li><a href="#">배너모음</a></li>
+            <li><a href="#">XML</a></li>
+            <li><a href="#">찾아오시는 길</a></li>
+          </ul>
+          <div class="footer-bottom">
+            <h2 class="footer-logo"><img src="./img/logo_footer.png" alt="footer logo"></h2>
+            <div class="footer-info">
+              <p>동인청사 : (우 41911) 대구광역시 중구 공평로 88 / 산격청사 : (우 41542)대구광역시 북구 연암로 40
+                /전화번호 : 053)120, 053)803-0114
+              </p>
+              <copyright>&copy; DAEGU METROPOLITAN CITY ALL RIGHTS RESERVED.</copyright>
+            </div>
+            <div class="wa-banner">
+              <div class="call"><img src="./img/img_120.png" alt="call center"></div>
+              <div class="wa"><img src="./img/img_wa.png" alt="wa page"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

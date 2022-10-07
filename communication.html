@@ -27,6 +27,7 @@
   <link rel="stylesheet" href="./css/initial.min.css">
   <link rel="stylesheet" href="./css/common.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/sub-page-common.css">
   <link rel="stylesheet" href="./css/communication.css">
   <link rel="stylesheet" href="./css/footer.css">
   <script type="text/javascript" src="./js/jquery-3.6.1.min.js"></script>
@@ -78,9 +79,9 @@
         <div class="inner">
           <ul class="gnb-all-main">
           <li>
-            <h4><a href="#">민원·소통·참여</a></h4>
+            <h4><a href="communication.html">민원·소통·참여</a></h4>
             <ul class="gnb-all-sub">
-              <li><a href="#">민원안내</a></li>
+              <li><a href="communication.html">민원안내</a></li>
               <li><a href="#">두드리소(민원/제안)</a></li>
               <li><a href="#">사이버추모관</a></li>
               <li><a href="#">안전신문고</a></li>
@@ -100,9 +101,9 @@
             </ul>
           </li>
           <li>
-            <h4><a href="#">정보공개</a></h4>
+            <h4><a href="information.html">정보공개</a></h4>
             <ul class="gnb-all-sub">
-              <li><a href="#">행정정보공개</a></li>
+              <li><a href="information.html">행정정보공개</a></li>
               <li><a href="#">정책실명제</a></li>
               <li><a href="#">알림정보</a></li>
               <li><a href="#">통합자료실</a></li>
@@ -114,9 +115,9 @@
             </ul>
           </li>
           <li>
-            <h4><a href="#">대구소개</a></h4>
+            <h4><a href="introduce.html">대구소개</a></h4>
             <ul class="gnb-all-sub">
-              <li><a href="#">시정비전</a></li>
+              <li><a href="introduce.html">시정비전</a></li>
               <li><a href="#">시청안내</a></li>
               <li><a href="#">일반현황</a></li>
               <li><a href="#">대구의 상징</a></li>
@@ -527,16 +528,18 @@
             <div class="con-footer-top">
               <div class="con-rating">
                 <h4>현재페이지의 내용과 사용편의성에 만족하십니까?</h4>
-                <input type="radio" id="5">
-                <label for="5">매우 만족</label>
-                <input type="radio" id="4">
-                <label for="4">만족</label>
-                <input type="radio" id="3">
-                <label for="3">보통</label>
-                <input type="radio" id="2">
-                <label for="2">불만족</label>
-                <input type="radio" id="1">
-                <label for="1">매우 불만족</label>
+                <form>
+                  <input type="radio" id="5" name="rating">
+                  <label for="5">매우 만족</label>
+                  <input type="radio" id="4" name="rating">
+                  <label for="4">만족</label>
+                  <input type="radio" id="3" name="rating">
+                  <label for="3">보통</label>
+                  <input type="radio" id="2" name="rating">
+                  <label for="2">불만족</label>
+                  <input type="radio" id="1" name="rating">
+                  <label for="1">매우 불만족</label>
+                </form>
               </div>
               <button>평가하기</button>
             </div>
