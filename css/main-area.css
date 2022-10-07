@@ -92,11 +92,13 @@
 
 .main-top .main-img {
   width: 49%;
-  height: 100%;
+  height: auto;
+  overflow: hidden;
   position: relative;
 }
 
 .main-top .main-img a {
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -106,6 +108,10 @@
 .main-top .main-img a:not(:first-child) {
   opacity: 0;
   visibility: hidden;
+}
+
+.main-top .main-img a img {
+  width: 100%;
 }
 
 .main-top .main-mayor {
@@ -154,6 +160,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-color: #ffffff;
+  overflow: hidden;
 }
 
 .main-top .mayor-box::after {
