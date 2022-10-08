@@ -153,7 +153,6 @@ $(function(){
     $('.notice-info li i').attr('class', 'fa-solid fa-minus');
     $(this).next().attr('class', 'fa-solid fa-plus');
     let noticeNum = $(this).data("num");
-    console.log(noticeNum, $('.notice-contents'));
     $('.notice-contents').addClass('hidden');
     $('.notice-contents').eq(noticeNum).removeClass('hidden');
   });

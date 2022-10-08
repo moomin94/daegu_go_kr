@@ -41,7 +41,6 @@
   border: 2px solid var(--main-color);
   border-top-left-radius: 18px;
   border-bottom-right-radius: 18px;
-  color: #ffffff;
   font-size: 18px;
   font-weight: bold;
   letter-spacing: -3px;
@@ -55,4 +54,8 @@
   font-size: 28px;
   margin-right: 5px;
   margin-top: 3px;
+}
+
+.search-btn span {
+  color: #ffffff;
 }

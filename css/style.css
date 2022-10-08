@@ -11,6 +11,33 @@
   z-index: 10;
 }
 
+.sideNav.top {
+  display: none;
+  position: relative;
+  right: 0;
+  width: 860px;
+  margin: 0 auto;
+  border: none;
+  background-color: #ffffff;
+  z-index: 1;
+}
+
+.sideNav.top ul {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+  text-align: center;
+}
+
+.sideNav.top li {
+  border: none;
+  padding: 10px 0;
+}
+
 .sideNav ul {
   height: 100%;
   display: flex;
