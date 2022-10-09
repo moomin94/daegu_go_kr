@@ -97,11 +97,11 @@
   background-color: skyblue;
 }
 
-.search-wrap {
+.info-search-wrap {
   width: 960px;
 }
 
-.search-box {
+.info-search-box {
   width: 100%;
   height: 59px;
   padding: 10px 5px;
@@ -111,7 +111,7 @@
   align-items: center;
 }
 
-.search-box .select {
+.info-search-box .select {
   width: 95px;
   height: 35px;
   padding-left: 3px;
@@ -123,7 +123,7 @@
   background: url('../img/down-arrow.png') no-repeat 95% center / 15%;
 }
 
-.search-input {
+.info-search-input {
   width: 280px;
   height: 35px;
   padding: 5px;
@@ -131,7 +131,7 @@
   margin: 0 5px;
 }
 
-.search-btn {
+.info-search-btn {
   width: 62px;
   height: 35px;
   /* top: 5px; */
