@@ -71,6 +71,10 @@ $(function(){
     $(this).find('.gnb-sub-m').addClass('on');
   })
 
+  $('.gnb-main-m > li > a').on('click',function(e){
+    e.preventDefault();
+  })
+
   // search modal open
   $('.search-icon').on('click', function(){
     $('.search-all-wrap').css({'opacity': '1', 'visibility': 'visible'});

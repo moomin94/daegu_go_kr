@@ -285,7 +285,7 @@ div.lan-menu.on ~ .lan-menu-btn > i {
 
 /* mobile hidden menu style */
 .gnb-wrap-m {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
