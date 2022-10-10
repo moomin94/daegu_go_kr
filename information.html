@@ -31,6 +31,7 @@
   <link rel="stylesheet" href="./css/sub-page-common.css">
   <link rel="stylesheet" href="./css/information.css">
   <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/sub-page-mediaquery.css">
   <script type="text/javascript" src="./js/jquery-3.6.1.min.js"></script>
   <script type="text/javascript" src="./js/common.js"></script>
   <script type="text/javascript" src="./js/sub-page.js"></script>
@@ -39,7 +40,7 @@
 </head>
 <body>
   <div id="wrap" class="sub">
-    
+
     <!-- mobile hidden all menu -->
     <div class="gnb-wrap-m">
       <div class="gnb-container-m">
@@ -446,7 +447,8 @@
                 <input type="text" class="info-search-input">
                 <button type="submit" class="info-search-btn">조회</button>
               </div>
-              <table class="con-table">
+              <div class="con-table-wrap">
+                <table class="con-table">
                 <tr>
                   <th>기관구분</th>
                   <th>기관명</th>
@@ -536,6 +538,7 @@
                   <td><a class="link_button location" data-id="9"></a></td>
                 </tr>
               </table>
+              </div>
             </form>
 
           </div>
@@ -543,16 +546,18 @@
             <div class="con-footer-top">
               <div class="con-rating">
                 <h4>현재페이지의 내용과 사용편의성에 만족하십니까?</h4>
-                <input type="radio" id="5" name="rating">
-                <label for="5">매우 만족</label>
-                <input type="radio" id="4" name="rating">
-                <label for="4">만족</label>
-                <input type="radio" id="3" name="rating">
-                <label for="3">보통</label>
-                <input type="radio" id="2" name="rating">
-                <label for="2">불만족</label>
-                <input type="radio" id="1" name="rating">
-                <label for="1">매우 불만족</label>
+                <form>
+                  <input type="radio" id="5" name="rating">
+                  <label for="5">매우 만족</label>
+                  <input type="radio" id="4" name="rating">
+                  <label for="4">만족</label>
+                  <input type="radio" id="3" name="rating">
+                  <label for="3">보통</label>
+                  <input type="radio" id="2" name="rating">
+                  <label for="2">불만족</label>
+                  <input type="radio" id="1" name="rating">
+                  <label for="1">매우 불만족</label>
+                </form>
               </div>
               <button>평가하기</button>
             </div>
