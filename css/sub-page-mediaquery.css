@@ -305,7 +305,17 @@
   }
 
   .info-search-box .select {
+    width: 75px;
     font-size: 0.8em;
+  }
+
+  .info-search-input {
+    width: 200px;
+  }
+
+  .info-search-btn {
+    width: 50px;
+    font-size: 0.9em;
   }
 
   .intro-img {
