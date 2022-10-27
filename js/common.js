@@ -193,77 +193,71 @@ $(function(){
   });
 
   // 대구시 운영서비스 slide
-  let slideWrap = $('.service-menu-wrap')
-  let slideUl = $('.service-menu-wrap > ul');
-  let cloneFirst = slideUl.eq(0).clone();
-  let cloneLast = slideUl.eq(1).clone();
-  let serviceNum = 0;
-  $('.service-menu').hover(
-    function(){
-      clearInterval(autoSlide);
-    },
-    function(){
-      if($('.service-pause').children().attr('class') == 'fa-solid fa-pause'){
-        autoSlide = setInterval(goNextService, 3000);
-      }else{
-        clearInterval(autoSlide);
-      }
-    }
-  )
-  function goNextService(){
-    if(serviceNum == 0){
-      slideWrap.animate({left: '-524px'},500,function(){
-        serviceNum++;
-        cloneFirst.css('left','1048px');
-        slideWrap.append(cloneFirst);
-      });
-    }else if(serviceNum == 1){
-      slideWrap.animate({left: '-1048px'},500,function(){
-        $(this).css({'left': '0px', 'transition': 'all 0s'});
-      });
-      serviceNum--;
-    }
+  const slideBox = document.querySelector('.service-menu-wrap');
+  const slideItem = document.querySelectorAll('.service-menu-wrap > ul');
+  const prevBtn = document.querySelector('.page-btn.left');
+  const nextBtn = document.querySelector('.page-btn.right');
+  const playPauseBtn = document.querySelector('.service-pause.btn i');
+
+  let counter = 1;
+  const size = 25;
+  slideBox.style.transform = 'translateX(' + -size * counter + '%)';
+
+  // slide 오른쪽으로 이동
+  function moveSlide(){
+      if (counter >= slideItem.length - 1) return;
+      slideBox.style.transition = "transform 0.4s ease-in-out";
+      counter++;
+      slideBox.style.transform = "translateX(" + -size * counter + "%)";
+      if (slideItem[counter].id === "first-clone") {
+      };
   };
-  let autoSlide = setInterval(goNextService, 3000);
-  $('.page-btn.right').click(function(){
-    clearInterval(autoSlide);
-    goNextService();
-    if($('.service-pause').children().attr('class') == 'fa-solid fa-pause'){
-      autoSlide = setInterval(goNextService, 3000);
-    }else{
+
+  // 3.5초마다 자동으로 오른쪽으로 이동
+  let autoSlide = setInterval(moveSlide, 3500);
+
+  // next 버튼 클릭시 오른쪽으로 이동
+  nextBtn.addEventListener("click", function(){
       clearInterval(autoSlide);
-    }
-  });
-  $('.page-btn.left').click(function(){
-    clearInterval(autoSlide);
-    if(serviceNum == 0){
-      slideWrap.prepend(cloneLast);
-      cloneLast.css('left', '-524px');
-      slideWrap.animate({left: '524px'},500,function(){
-        $(this).css({'left': '-524px', 'transition': 'all 0s'});
-        serviceNum++;
-      });
-    }else if(serviceNum == 1){
-      slideWrap.animate({left: '0px'},500);
-      serviceNum--;
-    }
-    if($('.service-pause').children().attr('class') == 'fa-solid fa-pause'){
-      autoSlide = setInterval(goNextService, 3000);
-    }else{
-      clearInterval(autoSlide);
-    }
+      moveSlide();
   });
 
-  $('.service-pause').click(function(){
-    if($(this).children().attr('class') == 'fa-solid fa-pause'){
+  // prev 버튼 클릭시 왼쪽으로 이동
+  prevBtn.addEventListener("click", () => {
       clearInterval(autoSlide);
-      $(this).children().attr('class', 'fa-solid fa-play');
-    }else {
-      clearInterval(autoSlide);
-      autoSlide = setInterval(goNextService, 3000);
-      $(this).children().attr('class', 'fa-solid fa-pause');
-    }
-  })
+      if (counter <= 0) return;
+      slideBox.style.transition = "transform 0.4s ease-in-out";
+      counter--;
+      slideBox.style.transform = "translateX(" + -size * counter + "%)";
+      if (slideItem[counter].id === "last-clone") {
+      };
+  });
+
+  // play, pause 버튼 클릭시 작동
+  playPauseBtn.addEventListener('click', function(){
+      if(this.className == 'fa-solid fa-pause'){
+          this.className = 'fa-solid fa-play';
+          clearInterval(autoSlide);
+      }else{
+          clearInterval(autoSlide);
+          this.className = 'fa-solid fa-pause';
+          autoSlide = setInterval(moveSlide, 3500);
+      }
+  });
+
+  // 4번에서 1번, 1번에서 4번 이미지로 자연스럽게 넘어가기
+  slideBox.addEventListener("transitionend", function () {
+      if (slideItem[counter].id === "last-clone") {
+        slideBox.style.transition = "none";
+        counter = slideItem.length - 2;
+        slideBox.style.transform = "translateX(" + -size * counter + "%)";
+      }
+      if (slideItem[counter].id === "first-clone") {
+          slideBox.style.transition = "none";
+          counter = slideItem.length - counter;
+          slideBox.style.transform = "translateX(" + -size * counter + "%)";
+      }
+  });
 
   // footer 내 바로가기 메뉴 toggle
   $('.go-menu-wrap .inner > ul > li > a').click(function(e){

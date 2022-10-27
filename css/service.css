@@ -35,6 +35,12 @@
   right: 25px;
 }
 
+.service-pause.btn i {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
 .service.left .page-btn {
   position: absolute;
   top: 170px;
@@ -64,7 +70,7 @@
 .service-menu {
   position: relative;
   width: 100%;
-  height: 266px;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -73,13 +79,12 @@
   top: 0;
   left: 0;
   width: 400%;
-  height: 266px;
+  height: auto;
   /* transition: all 0.3s; */
 }
 
 .service-menu ul {
-  position: absolute;
-  top: 0;
+  float: left;
   width: 25%;
   text-align: justify;
   background-color: #eff7fb;
@@ -114,14 +119,6 @@
   margin-top: 8px;
   text-align: center;
   color: #444444;
-}
-
-.service-menu ul.first{
-  left: 0;
-}
-
-.service-menu ul.last{
-  left: 524px;
 }
 
 .service.right {
