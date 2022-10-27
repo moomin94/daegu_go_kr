@@ -1,0 +1,237 @@
+@charset "UTF-8";
+
+.breadcrumb {
+  width: 27%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.breadcrumb li,
+.breadcrumb li i {
+ font-size: 14px;
+ color: #444444;
+}
+
+.breadcrumb li {
+  position: relative;
+  line-height: 1.4;
+}
+
+.breadcrumb li:not(:first-child)::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: -13px;
+  width: 7px;
+  height: 11px;
+  background: url('../img/sp_com.png') no-repeat -20px -100px;
+}
+
+.breadcrumb li:last-child {
+  font-weight: 600;
+}
+
+.main-con-body {
+  margin: 35px 0;
+}
+
+.info-search-wrap {
+  width: 960px;
+}
+
+.info-search-box {
+  width: 100%;
+  height: 59px;
+  padding: 10px 5px;
+  border: 1px solid #cccccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input.date-search {
+  width: 115px;
+  height: 35px;
+  border: 1px solid #b1b1b1;
+  padding: 7px 20px 7px 8px;
+  position: relative;
+  margin: 2px;
+  outline: none;
+}
+
+input#start::-webkit-datetime-edit {
+  font-size: 14px;
+  color: #888888;
+}
+
+input#finish::-webkit-datetime-edit {
+  font-size: 15px;
+  color: #444444;
+}
+
+input.date-search::-webkit-calendar-picker-indicator{
+  background-image: url('https://www.daegu.go.kr/cmsh/daegu.go.kr/images/2022/base/calendar.gif');
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-color: #ffffff;
+  cursor: pointer;
+  border-radius: 3px;
+  position: absolute;
+  top: 7.5px;
+  right: 0;
+}
+
+.info-search-box .select {
+  width: 95px;
+  height: 35px;
+  padding-left: 5px;
+  border-color: #cccccc;
+  -o-appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url('../img/down-arrow.png') no-repeat 95% center / 15%;
+  font-size: 15px;
+  color: #444444;
+  margin: 2px;
+}
+
+.info-search-input {
+  width: 280px;
+  height: 35px;
+  padding: 5px;
+  border: 1px solid #cccccc;
+  margin: 2px;
+}
+
+.info-search-btn {
+  width: 62px;
+  height: 35px;
+  /* top: 5px; */
+  background-color: #1178c6;
+  color: #ffffff;
+  border-radius: 5px;
+  transition: all 0.2s;
+  margin: 2px;
+}
+
+.info-search-btn:hover {
+  opacity: 0.8;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+}
+
+.con-table {
+  width: 100%;
+  margin: 20px 0 5px;
+  border-top: 3px solid #444444;
+  border-bottom: 2px solid #444444;
+  text-align: center;
+  font-size: 14px;
+}
+
+.con-table th, td {
+  padding: 14px 5px;
+}
+
+.con-table th {
+  position: relative;
+  padding: 18px 0;
+  border-bottom: 1px solid #444444;
+  color: #444444;
+}
+
+.con-table th:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  width: 1px;
+  height: 14px;
+  background-color: #e2e2e2;
+}
+
+.con-table td {
+  height: 58px;
+  vertical-align: middle;
+}
+
+.con-table td:nth-child(1) {
+  padding: 0 5px;
+  width: 50px;
+}
+
+.con-table td:nth-child(2) {
+  text-align: left;
+  line-height: 1.2;
+}
+
+.pagination-wrap {
+  width: 960px;
+  height: 44px;
+  margin: 30px auto;
+}
+
+.pagination-wrap ul {
+  display: flex;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+.pagination-wrap ul li {
+  margin: 2px 2.5px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  background-color: #ffffff;
+  border: 1px solid #d9d9d9;
+}
+
+.pagination-wrap ul li a {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  color: #777777;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 11px 0;
+}
+
+.pagination-wrap ul li.on {
+  background-color: #333333;
+}
+
+.pagination-wrap ul li.on a {
+  color: #ffffff;
+}
+
+.page-btn.go a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 14px;
+  height: 11px;
+  vertical-align: middle;
+  margin: auto;
+  background: url('../img/sp_com_alert.png') no-repeat 0 0;
+}
+
+.page-btn.go.first a::before {
+  background-position: 0 -30px;
+}
+.page-btn.go.next a::before {
+  background-position: -24px -30px;
+}
+.page-btn.go.prev a::before {
+  background-position: -38px -30px;
+}
+.page-btn.go.last a::before {
+  background-position: -60px -30px;
+}
