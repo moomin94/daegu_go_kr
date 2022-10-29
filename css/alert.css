@@ -98,6 +98,12 @@ input.date-search::-webkit-calendar-picker-indicator{
   margin: 2px;
 }
 
+.info-search-box .select.alert2 {
+  width: 120px;
+}
+
+
+
 .info-search-input {
   width: 280px;
   height: 35px;
@@ -156,6 +162,10 @@ input.date-search::-webkit-calendar-picker-indicator{
 .con-table td {
   height: 58px;
   vertical-align: middle;
+}
+
+.con-table td img {
+  cursor: pointer;
 }
 
 .con-table td:nth-child(1) {
@@ -234,4 +244,8 @@ input.date-search::-webkit-calendar-picker-indicator{
 }
 .page-btn.go.last a::before {
   background-position: -60px -30px;
+}
+
+.con-footer-bottom.alert li span::before {
+  display: none;
 }

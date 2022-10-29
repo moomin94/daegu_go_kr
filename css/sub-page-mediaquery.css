@@ -312,6 +312,19 @@
     margin-top: 5px;
   }
 
+  .con-footer-bottom.alert  {
+    -ms-align-items: center;
+    align-items: center;
+  }
+
+  .con-footer-bottom.alert li {
+    margin: 5px 0;
+  }
+
+  .con-footer-bottom.alert p {
+    margin-top: 0;
+  }
+
   .info-search-box.alert {
     flex-wrap: wrap;
     height: auto;
