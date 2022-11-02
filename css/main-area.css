@@ -126,16 +126,23 @@
   border-radius: 30px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .main-top .weather i {
   margin-right: 10px;
   color: #84c8ff;
+  line-height: 50px;
 }
 
 .main-top .weather span {
   font-size: 13px;
+}
+
+.main-top .weather .check > span {
+  display: block;
+  line-height: 50px;
+  transform: translateY(0px);
 }
 
 .main-top .weather span.temp {
@@ -143,6 +150,7 @@
   font-weight: 600;
   color: red;
   margin-right: 15px;
+  line-height: 50px;
 }
 
 .main-top .weather span.thresholds {

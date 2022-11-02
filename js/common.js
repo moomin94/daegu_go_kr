@@ -1,5 +1,4 @@
 'use strict';
-
 $(function(){
   // gnb slide toggle
   $('.gnb').on('mouseenter', function(){
@@ -179,6 +178,27 @@ $(function(){
     slideToNext();
     next = setInterval(slideToNext,3500);
   });
+
+  // weather animation
+  const weatherWrap = $('.weather .check');
+  let num = 0;
+  const size = 50;
+  function moveWeather() {
+    if(num == 3) return;
+    weatherWrap.css('transition', '.5s');
+    num++;
+    weatherWrap.css('transform', `translateY(${-size*num}px)`);
+  }
+  let autoMove = setInterval(moveWeather, 2000);
+
+  weatherWrap.on("transitionend", function () {
+       if(num == 3) {
+       weatherWrap.css('transition', 'none');
+       num = 0;
+       weatherWrap.css('transform', `translateY(${-size*num}px)`);
+       }
+   });
+
 
   // notice btn list animation
   $('.notice-info li a').click(function(e){
