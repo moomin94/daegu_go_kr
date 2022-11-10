@@ -366,7 +366,6 @@
   .main-top .main-mayor {
     width: 100%;
     height: 50%;
-    overflow: hidden;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -375,6 +374,12 @@
   .main-top .weather {
     width: 40%;
     margin: 0 5%;
+    overflow: hidden;
+  }
+
+  .main-top .weather .check > span {
+    /* line-height: 50px; */
+    transform: translateY(0px);
   }
 
   .main-top .weather span.thresholds {
@@ -771,10 +776,6 @@
 
 @media screen and (max-width:768px){
 
-  .search-wrap {
-    /* width: 500px; */
-  }
-
   .sideNav.top ul {
     overflow-x: auto;
     overflow-y: hidden;
@@ -817,11 +818,6 @@
   .main-top .weather {
     width: 100%;
     height: 50px;
-    margin: 10px 5%;
-  }
-
-  .main-top .weather span.thresholds {
-    display: inline-block;
   }
 
   .main-top .main-mayor a {
